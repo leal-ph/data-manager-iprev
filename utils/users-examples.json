@@ -1,0 +1,137 @@
+[{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fa4"
+  },
+  "birthdate": "19/04/1991",
+  "address": null,
+  "zipcode": null,
+  "city": null,
+  "state": null,
+  "telephone": "61995226572",
+  "profile": {
+    "$oid": "5f616460e98fca0006955fb0"
+  },
+  "form_answers": [],
+  "email_confirmed": false,
+  "documents": [],
+  "payments": [],
+  "iugu_client_id": null,
+  "iugu_subscriptions": [],
+  "last_token": null,
+  "verification_timestamp": null,
+  "renewpassword_timestamp": null,
+  "renewpassword_permission": false,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:27.620Z"
+  },
+  "name": "Teste User",
+  "lastname": "BCA 01",
+  "cpf": "000000000-01",
+  "rg": "0000001",
+  "email": "teste@user",
+  "password": "$2a$10$qPceaSwh/Ys.Tonchgrqmuok4yCpjXP86kiEU4e21qzk8HObtJwKS",
+  "fullname": "Teste User BCA 01",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fa5"
+  },
+  "birthdate": "19/04/1992",
+  "address": null,
+  "zipcode": null,
+  "city": null,
+  "state": null,
+  "telephone": null,
+  "profile": {
+    "$oid": "5f616460e98fca0006955fb5"
+  },
+  "form_answers": [],
+  "email_confirmed": false,
+  "documents": [],
+  "payments": [],
+  "iugu_client_id": null,
+  "iugu_subscriptions": [],
+  "last_token": null,
+  "verification_timestamp": null,
+  "renewpassword_timestamp": null,
+  "renewpassword_permission": false,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:27.620Z"
+  },
+  "name": "Teste User",
+  "lastname": "BCA 02",
+  "cpf": "000000000-02",
+  "rg": "0000002",
+  "email": "teste2@user",
+  "password": "$2a$10$je46adPEkt6G6j2g8Xk8XetMnQKgv9AMltUtcgwfrtlv916BMPJM.",
+  "fullname": "Teste User BCA 02",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fa6"
+  },
+  "birthdate": "19/04/1993",
+  "address": null,
+  "zipcode": null,
+  "city": null,
+  "state": null,
+  "telephone": "61995226572",
+  "profile": {
+    "$oid": "5f616460e98fca0006955fb7"
+  },
+  "form_answers": [],
+  "email_confirmed": false,
+  "documents": [],
+  "payments": [],
+  "iugu_client_id": null,
+  "iugu_subscriptions": [],
+  "last_token": null,
+  "verification_timestamp": null,
+  "renewpassword_timestamp": null,
+  "renewpassword_permission": false,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:27.620Z"
+  },
+  "name": "Teste User",
+  "lastname": "BCA 03",
+  "cpf": "000000000-03",
+  "rg": "0000003",
+  "email": "teste3@user",
+  "password": "$2a$10$U8ojzJgMopzCl/eChJV6B.qtw1Ou5m2rwOINZkfDYvyN/jCHmB/ZW",
+  "fullname": "Teste User BCA 03",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fa7"
+  },
+  "birthdate": "19/04/1994",
+  "address": null,
+  "zipcode": null,
+  "city": null,
+  "state": null,
+  "telephone": null,
+  "profile": {
+    "$oid": "5f616460e98fca0006955fb9"
+  },
+  "form_answers": [],
+  "email_confirmed": false,
+  "documents": [],
+  "payments": [],
+  "iugu_client_id": null,
+  "iugu_subscriptions": [],
+  "last_token": null,
+  "verification_timestamp": null,
+  "renewpassword_timestamp": null,
+  "renewpassword_permission": false,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:27.620Z"
+  },
+  "name": "Teste User",
+  "lastname": "BCA 04",
+  "cpf": "000000000-04",
+  "rg": "0000004",
+  "email": "teste4@user",
+  "password": "$2a$10$tJQVP5lDPrj7dj83TZ7qOOou8Q6CIdoE5HKyPvizJpIZ/r0oN1Y62",
+  "fullname": "Teste User BCA 04",
+  "__v": 0
+}]

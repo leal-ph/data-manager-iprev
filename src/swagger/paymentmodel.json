@@ -1,0 +1,59 @@
+{
+  "title": "Payment",
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string",
+      "required": false
+    },
+    "doc_errors": {
+      "type": "object",
+      "required": false,
+      "properties": {}
+    },
+    "success": {
+      "type": "boolean",
+      "required": false
+    },
+    "url": {
+      "type": "string",
+      "required": false
+    },
+    "pdf": {
+      "type": "string",
+      "required": false
+    },
+    "identification": {
+      "type": "string",
+      "required": false
+    },
+    "invoice_id": {
+      "type": "string",
+      "required": false
+    },
+    "LR": {
+      "type": "string",
+      "required": false
+    },
+    "status": {
+      "type": "string",
+      "required": false
+    },
+    "_id": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

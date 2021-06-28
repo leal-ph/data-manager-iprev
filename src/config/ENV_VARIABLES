@@ -1,0 +1,7 @@
+process.env.AUTHSERVICE --> URL do serviço de autenticação de requisições (default 'http://localhost:3001/validaterequest')
+process.env.DBHOST --> SERVIDOR DO MONGO
+process.env.DBPORT --> PORTA DO MONGO
+process.env.DBNAME --> NOME DO BANCO DE DADOS DO MONGO
+process.env.DBUSER --> USUÁRIO DO MONGO
+process.env.DBPASS --> SENHA DO MONGO
+process.env.SERVICEPORT --> PORTA DO SERVIÇO

@@ -1,0 +1,52 @@
+{
+  "title": "Meeting",
+  "required": [
+    "lawyer",
+    "client",
+    "date"
+  ],
+  "properties": {
+    "lawyer": {
+      "type": "string"
+    },
+    "client": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "date_ts": {
+      "type": "number",
+      "required": false
+    },
+    "date_formatted": {
+      "type": "string",
+      "required": false
+    },
+    "link": {
+      "type": "string",
+      "required": false
+    },
+    "id_teams": {
+      "type": "string",
+      "required": false
+    },
+    "informations": {
+      "type": "object",
+      "required": false,
+      "properties": {}
+    },
+    "_id": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

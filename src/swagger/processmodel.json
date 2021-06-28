@@ -1,0 +1,67 @@
+{
+  "title": "Process",
+  "required": [
+    "proc_number"
+  ],
+  "properties": {
+    "lawyer": {
+      "type": "string",
+      "required": false
+    },
+    "client": {
+      "type": "string",
+      "required": false
+    },
+    "proc_number": {
+      "type": "string"
+    },
+    "active_pole": {
+      "type": "string",
+      "required": false
+    },
+    "passive_pole": {
+      "type": "string",
+      "required": false
+    },
+    "government_agency": {
+      "type": "string",
+      "required": false
+    },
+    "subject": {
+      "type": "string",
+      "required": false
+    },
+    "court_class": {
+      "type": "string",
+      "required": false
+    },
+    "notice_date": {
+      "type": "string",
+      "required": false
+    },
+    "internal_notes": {
+      "type": "array",
+      "required": false,
+      "items": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    },
+    "status": {
+      "type": "string",
+      "required": false
+    },
+    "_id": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

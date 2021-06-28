@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "5f6ab2c36110f34939ec5c6b"
+  },
+  "lawyer": {
+    "$oid": "5f6aafe2697deb00068b3313"
+  },
+  "client": {
+    "$oid": "5f6aaf06697deb00068b3310"
+  },
+  "proc_number": "1498489489748948",
+  "active_pole": "JOÃOZINHO SILVA",
+  "passive_pole": "MARIAZINHA SILVA",
+  "government_agency": "TCU-DF",
+  "subject": "PENSÃO ALIMENTÍCIA",
+  "court_class": "SEI NÃO",
+  "notice_date": "19/04/2020 15:30",
+  "internal_notes": [
+    {
+      "info": "MANDARAM TE PRENDER, MANO\n\nFOGE!",
+      "date": "22/09/2020 23:33"
+    }
+  ],
+  "status": "MANDA PRENDER!",
+  "updatedAt": {
+    "$date": "2020-09-23T02:33:54.804Z"
+  }
+}]

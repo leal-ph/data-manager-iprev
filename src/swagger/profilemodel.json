@@ -1,0 +1,37 @@
+{
+  "title": "Profile",
+  "required": [
+    "title",
+    "text"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "neededDocuments": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "imagepath": {
+      "type": "string",
+      "required": false
+    },
+    "_id": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

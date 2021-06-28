@@ -1,0 +1,26 @@
+{
+  "title": "Text",
+  "required": [
+    "type",
+    "text"
+  ],
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "_id": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

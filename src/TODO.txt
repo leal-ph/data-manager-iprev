@@ -1,0 +1,13 @@
+[X] MUDAR VERIFICAÇÃO DO TOKEN NO BANCO (VERIFICAR GERAL);
+[-] VERIFICAR CALENDÁRIOS DO TEAMS;
+[X] ADICIONAR INFORMATION NA COLLATION DE REUNIÕES;
+[X] ADD TEAMS_USER_ID e CALENDAR_ID DOS ADVOGADOS;
+[X] CRIAR TABELA DE PAGAMENTOS;
+
+[X] Campo needsign nos docs
+[] yarn build na pasta types
+[] implementar api d4sign
+[] opção de excluir os emails apos processar os dados
+[] testar metodos de salvar no banco para os processos
+[] verificar se os emails da Microsoft existe o campo next e iterar nos próximos caso haja
+[] implementar o schedule (loop automático) na checagem.

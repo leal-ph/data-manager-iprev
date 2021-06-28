@@ -1,0 +1,53 @@
+[{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fa8"
+  },
+  "last_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InRlc3RlMUBsYXd5ZXIiLCJpYXQiOjE2MDAyMjYyMzF9.DcyXpBBAYetDtnXKfZrEgMvdJH8JmAxdNw9wmmibaS4",
+  "clients": [
+    {
+      "$oid": "5f616460e98fca0006955fa4"
+    },
+    {
+      "$oid": "5f616460e98fca0006955fa5"
+    }
+  ],
+  "teamsuserID": null,
+  "teamscalendarID": null,
+  "super_admin": false,
+  "group": null,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:28.045Z"
+  },
+  "name": "Teste Lawyer",
+  "expertise": "Criminal",
+  "lastname": "BCA 01",
+  "email": "teste1@lawyer",
+  "password": "$2a$10$Ne8lQ4qwavFfDhBhkLEhvuST2CNyZnJN06pfiWV9gR.KEWblMFp5C",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fa9"
+  },
+  "last_token": null,
+  "clients": [
+    {
+      "$oid": "5f616460e98fca0006955fa6"
+    },
+    {
+      "$oid": "5f616460e98fca0006955fa7"
+    }
+  ],
+  "teamsuserID": null,
+  "teamscalendarID": null,
+  "super_admin": false,
+  "group": null,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:28.045Z"
+  },
+  "name": "Teste Lawyer",
+  "lastname": "BCA 02",
+  "expertise": "Previdenciário",
+  "email": "teste2@lawyer",
+  "password": "$2a$10$D02HSO6jONIr8aqiiDCSI.bqbpyara113U7utvKv1c.yWVHpqLROG",
+  "__v": 0
+}]

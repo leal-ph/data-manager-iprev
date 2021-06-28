@@ -1,0 +1,35 @@
+{
+  "title": "Question",
+  "required": [
+    "questionID",
+    "question",
+    "options"
+  ],
+  "properties": {
+    "questionID": {
+      "type": "number"
+    },
+    "question": {
+      "type": "string"
+    },
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    },
+    "_id": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

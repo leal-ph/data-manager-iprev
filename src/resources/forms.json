@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "5f149dc5b2c3333a34e5402e"
+  },
+  "questions": [
+    {
+      "$oid": "5f149e94b2c3333a34e5402f"
+    }
+  ],
+  "createdAt": {
+    "$date": "2020-07-19T19:15:39.673Z"
+  },
+  "type": "adicional",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f17ae4bdfbbe01850a502f9"
+  },
+  "questions": [
+    {
+      "$oid": "5f149da0b2c3333a34e5402d"
+    },
+    {
+      "$oid": "5f149d82b2c3333a34e5402c"
+    },
+    {
+      "$oid": "5f149d1fb2c3333a34e5402b"
+    },
+    {
+      "$oid": "5f1499f8b5be493cb440a234"
+    },
+    {
+      "$oid": "5f149a5eb5be493cb440a235"
+    },
+    {
+      "$oid": "5f149a7ab5be493cb440a236"
+    },
+    {
+      "$oid": "5f149af0b5be493cb440a237"
+    },
+    {
+      "$oid": "5f149b67b5be493cb440a238"
+    }
+  ],
+  "createdAt": {
+    "$date": "2020-07-22T03:10:24.654Z"
+  },
+  "type": "vida-contributiva",
+  "__v": 0
+}]

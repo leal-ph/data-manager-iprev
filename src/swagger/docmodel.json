@@ -1,0 +1,51 @@
+{
+  "title": "Doc",
+  "required": [
+    "type",
+    "path"
+  ],
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "need_sign": {
+      "type": "boolean",
+      "required": false
+    },
+    "d4sign_id": {
+      "type": "string",
+      "required": false
+    },
+    "sign_status": {
+      "type": "string",
+      "required": false
+    },
+    "finished_ts": {
+      "type": "number",
+      "required": false
+    },
+    "signers_info": {
+      "type": "array",
+      "required": false,
+      "items": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    },
+    "_id": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "title": "Lawyer",
+  "required": [
+    "name",
+    "lastname",
+    "email",
+    "password"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "expertise": {
+      "type": "string",
+      "required": false
+    },
+    "email": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "last_token": {
+      "type": "string",
+      "required": false
+    },
+    "clients": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "teamsuserID": {
+      "type": "string",
+      "required": false
+    },
+    "teamscalendarID": {
+      "type": "string",
+      "required": false
+    },
+    "oab_register": {
+      "type": "string",
+      "required": false
+    },
+    "super_admin": {
+      "type": "boolean",
+      "required": false
+    },
+    "group": {
+      "type": "string",
+      "required": false
+    },
+    "_id": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

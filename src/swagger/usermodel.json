@@ -1,0 +1,131 @@
+{
+  "title": "User",
+  "required": [
+    "name",
+    "email"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string",
+      "required": false
+    },
+    "fullname": {
+      "type": "string",
+      "required": false
+    },
+    "cpf": {
+      "type": "string",
+      "required": false
+    },
+    "rg": {
+      "type": "string",
+      "required": false
+    },
+    "birthdate": {
+      "type": "string",
+      "required": false
+    },
+    "address": {
+      "type": "string",
+      "required": false
+    },
+    "zipcode": {
+      "type": "string",
+      "required": false
+    },
+    "city": {
+      "type": "string",
+      "required": false
+    },
+    "state": {
+      "type": "string",
+      "required": false
+    },
+    "telephone": {
+      "type": "string",
+      "required": false
+    },
+    "email": {
+      "type": "string"
+    },
+    "profile": {
+      "type": "string",
+      "required": false
+    },
+    "form_answers": {
+      "type": "array",
+      "required": false,
+      "items": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    },
+    "password": {
+      "type": "string",
+      "required": false
+    },
+    "email_confirmed": {
+      "type": "boolean"
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "payments": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "iugu_client_id": {
+      "type": "string",
+      "required": false
+    },
+    "iugu_subscriptions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "internal_notes": {
+      "type": "object",
+      "properties": {}
+    },
+    "last_token": {
+      "type": "string",
+      "required": false
+    },
+    "verification_timestamp": {
+      "type": "number",
+      "required": false
+    },
+    "renewpassword_timestamp": {
+      "type": "number",
+      "required": false
+    },
+    "renewpassword_permission": {
+      "type": "boolean",
+      "required": false
+    },
+    "_id": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

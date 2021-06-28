@@ -1,0 +1,83 @@
+{
+    "profiles":[
+    {
+        "title": "Adicional de 25% na aposentadoria",
+        "text": "Ação na qual busca o segurado acrescer ao seu benefício 25%, tendo em vista a necessidade de um cuidador, ou seja, de auxílio diário para suas atividades.",
+        "neededDocuments": ["KIT PROCURAÇÃO", "LOGIN E SENHA MEU INSS", "REGISTRO GERAL", "CPF", "COMPROVANTE DE RESIDÊNCIA", "CARTA DE CONCESSÃO DE BENEFÍCIOS ANTERIOR", "COMPROVANTES DE NECESSIDADE", "OUTROS DOCUMENTOS"]
+    },
+    {
+        "title": "Benefício assistencial – LOAS (deficiente ou idoso)",
+        "text": "Ação na qual se busca a concessão do benefício assistencial (benefício pago pelo INSS no valor de 01 (um) salário mínimo para aquele que preencha os requisitos existentes na lei).",
+        "neededDocuments": ["KIT PROCURAÇÃO", "LOGIN E SENHA MEU INSS", "REGISTRO GERAL", "CPF", "COMPROVANTE DE RESIDÊNCIA", "INDEFERIMENTO ADMINISTRATIVO", "EXAMES, ATESTADOS E LAUDOS QUE COMPROVEM A DEFICIÊNCIA OU INCAPACIDADE", "COMPROVANTES DE RECEBIMENTOS", "COMPROVANTES DE GASTOS", "REITERAÇÃO DE DOENÇAS OU ESTADO EMERGENCIAL", "OUTROS DOCUMENTOS"]
+    },
+    {
+        "title": "Aposentadoria por tempo de contribuição",
+        "text": "Ação na qual se busca a concessão (permissão) de aposentadoria computando-se o tempo de trabalho, tanto o tempo comum como aquele período em que laborou em atividade especial (exposto a agentes nocivos).",
+        "neededDocuments": ["KIT PROCURAÇÃO", "LOGIN E SENHA MEU INSS", "REGISTRO GERAL", "COMPROVANTE DE RESIDÊNCIA", "PROCESSO ADMINISTRATIVO", "INDEFERIMENTO ADMINISTRATIVO", "EXTRATO DE CNIS", "CARTEIRA DE TRABALHO PROFISSIONAL", "GUIA DA PREVIDÊNCIA SOCIAL PAGA", "COMPROVAÇÃO DE ATIVIDADES LABORAIS", "DOCUMENTOS QUE COMPROVAM TRABALHO INSALUBRE/PERICULOSO", "OUTROS DOCUMENTOS"]
+    },
+    {
+        "title": "Auxílio-acidente",
+        "text": "Ação na qual se busca o segurado a concessão de auxílio-acidente, tendo em vista a redução de sua capacidade laborativa após o acidente sofrido.",
+        "neededDocuments": ["KIT PROCURAÇÃO", "LOGIN E SENHA MEU INSS", "REGISTRO GERAL", "COMPROVANTE DE RESIDÊNCIA", "DEFERIMENTO DO BENEFÍCIO OU CONCESSÃO REFERENTE AO AUXÍLIO DOENÇA", "DOCUMENTO DE CESSÃO DO AUXÍLIO-DOENÇA", "EXTRATO DE CNIS", "CARTEIRA DE TRABALHO PROFISSIONAL", "RECEITUÁRIOS, LAUDOS E EXAMES", "OUTROS DOCUMENTOS"]
+    },
+    {
+        "title": "Concessão de aposentadoria especial",
+        "text": "Ação na qual se busca a concessão (permissão) de aposentadoria computando-se o tempo de trabalho de 25 anos diante da periculosidade ou insalubridade (situações degradantes e nocivas) e pela nova regra da previdência (após novembro de 2019 data da Reforma da previdência) ter os respectivos 25 anos ininterruptos de atividade considerada especial.",
+        "neededDocuments": ["KIT PROCURAÇÃO", "LOGIN E SENHA MEU INSS", "REGISTRO GERAL", "COMPROVANTE DE RESIDÊNCIA", "INDEFERIMENTO ADMINISTRATIVO", "EXTRATO DE CNIS", "GUIA DA PREVIDÊNCIA SOCIAL PAGA", "COMPROVAÇÃO DE ATIVIDADES LABORAIS", "DOCUMENTOS QUE COMPROVAM TRABALHO INSALUBRE/PERICULOSO"]
+    },
+    {
+        "title": "Pensão por morte",
+        "text": "Ação na qual busca o dependente do segurado o benefício de pensão por morte, face o falecimento do segurado.",
+        "neededDocuments": ["KIT PROCURAÇÃO", "LOGIN E SENHA MEU INSS", "REGISTRO GERAL", "COMPROVANTE DE RESIDÊNCIA", "CERTIDÃO DE ÓBITO", "INDEFERIMENTO ADMINISTRATIVO", "EXTRATO DE CNIS DO FALECIDO", "CARTEIRA DE TRABALHO PROFISSIONAL DO FALECIDO", "DOCUMENTOS DE DEPENDÊNCIA ECONÔMICA", "OUTROS DOCUMENTOS"] 
+    },
+    {
+        "title": "Aposentadoria por idade",
+        "text": "Ação na qual se busca a concessão (permissão) de aposentadoria por idade desde que atingido o tempo mínimo de 15 anos de contribuição até novembro de 2019.",
+        "neededDocuments": ["KIT PROCURAÇÃO", "LOGIN E SENHA MEU INSS", "REGISTRO GERAL", "COMPROVANTE DE RESIDÊNCIA", "INDEFERIMENTO ADMINISTRATIVO", "EXTRATO DE CNIS", "CARTEIRA DE TRABALHO PROFISSIONAL", "GUIA DA PREVIDÊNCIA SOCIAL PAGA", "COMPROVAÇÃO DE ATIVIDADES LABORAIS", "DOCUMENTOS QUE COMPROVAM TRABALHO INSALUBRE/PERICULOSO", "OUTROS DOCUMENTOS"]
+    },
+    {
+        "title": "Concessão/Restabelecimento de auxílio-doença e/ou aposentadoria por invalidez",
+        "text": "Ação na qual se busca a concessão/restabelecimento do benefício de auxílio-doença e/ou sua conversão em aposentadoria por invalidez desde que preenchidos os requisitos para isto.",
+        "neededDocuments": ["KIT PROCURAÇÃO", "LOGIN E SENHA MEU INSS", "REGISTRO GERAL", "COMPROVANTE DE RESIDÊNCIA", "CARTA DE BENEFÍCIO ACEITO (INSS)", "INDEFERIMENTO ADMINISTRATIVO", "EXTRATO DE CNIS", "CARTEIRA DE TRABALHO PROFISSIONAL", "GUIA DA PREVIDÊNCIA SOCIAL PAGA", "COMPROVAÇÃO DE ATIVIDADES LABORAIS", "RECEITUÁRIOS, LAUDOS E EXAMES", "OUTROS DOCUMENTOS"]
+    },
+    {
+        "title": "Correção do valor recebido por Precatório/Revisão",
+        "text": "Ação na qual se busca a revisão do valor recebido através de indenizações pagas pelo INSS, União ou de qualquer entidade da Administraçaõ Pública.",
+        "neededDocuments": ["KIT PROCURAÇÃO", "LOGIN E SENHA MEU INSS", "REGISTRO GERAL", "COMPROVANTE DE RESIDÊNCIA", "OUTROS DOCUMENTOS"]
+    },
+    {
+        "title": "Salário-maternidade",
+        "text": "Ação na qual busca a segurada a concessão do salário-maternidade, tendo em vista, via de regra, o nascimento de seu filho(a).",
+        "neededDocuments": ["KIT PROCURAÇÃO", "LOGIN E SENHA MEU INSS", "REGISTRO GERAL", "COMPROVANTE DE RESIDÊNCIA", "CARTEIRA DE TRABALHO PROFISSIONAL", "CERTIDÃO DE NASCIMENTO/ÓBITO DA CRIANÇA", "INDEFERIMENTO ADMINISTRATIVO", "EXTRATO DE CNIS", "OUTROS DOCUMENTOS"]
+    },
+    {
+        "title": "Auxílio-reclusão",
+        "text": "Ação na qual busca o dependente do segurado preso o benefício de auxílio-reclusão.",
+        "neededDocuments": ["KIT PROCURAÇÃO", "LOGIN E SENHA MEU INSS", "REGISTRO GERAL", "COMPROVANTE DE RESIDÊNCIA", "INDEFERIMENTO ADMINISTRATIVO", "EXTRATO DE CNIS", "CARTEIRA DE TRABALHO PROFISSIONAL", "COMPROVANTES DE RECEBIMENTOS", "COMPROVANTES DE DEPENDÊNCIAS", "OUTROS DOCUMENTOS"]
+    },
+    {
+        "title": "Revisão de Benefício",
+        "text": "Ação na qual busca revisar o benefício do segurado, por erro no ato concessório, por erro de cálculo do INSS e ainda pela possibilidade de averbar (anotar, declarar) período não computado pelo INSS ou período laborado em atividade especial reconhecido pelo INSS apenas como tempo comum, desde que comprovada a exposição a agentes nocivos. Ainda, para aqueles que trabalham em atividade rural, se não reconhecida pelo INSS na via administrativa, é possível a averbação (declaração) deste período judicialmente.",
+        "neededDocuments": ["KIT PROCURAÇÃO", "LOGIN E SENHA MEU INSS", "REGISTRO GERAL", "COMPROVANTE DE RESIDÊNCIA", "PROCESSO ADMINISTRATIVO", "EXTRATO DE CNIS", "CARTEIRA DE TRABALHO PROFISSIONAL", "GUIA DA PREVIDÊNCIA SOCIAL PAGA", "COMPROVAÇÃO DE ATIVIDADES LABORAIS", "DOCUMENTOS QUE COMPROVEM TRABALHO INSALUBRE/PERICULOSO", "DOCUMENTOS QUE COMPROVEM TRABALHOS RURAIS", "OUTROS DOCUMENTOS"]
+    },
+    {
+        "title": "Revisão salário-maternidade",
+        "text": "Ação na qual se busca a revisão do salário maternidade recebido, visto que deve o mesmo ser pago no valor integral ao da última remuneração antes do parto. Ainda é devida a revisão para as seguradas empregadas e trabalhadoras avulsas.",
+        "neededDocuments": ["KIT PROCURAÇÃO", "LOGIN E SENHA MEU INSS", "REGISTRO GERAL", "COMPROVANTE DE RESIDÊNCIA", "CARTA DE CONCESSÃO DE BENEFÍCIOS ANTERIOR", "EXTRATO DE CNIS", "OUTROS DOCUMENTOS"]
+    },
+    {
+        "title": "Revisão do super teto",
+        "text": "Ação na qual se busca a revisão do benefício e sua readequação pela EC n° 20/98 e n° 41/03, diante de sua limitação pelo teto da época.",
+        "neededDocuments": ["KIT PROCURAÇÃO", "LOGIN E SENHA MEU INSS", "REGISTRO GERAL", "COMPROVANTE DE RESIDÊNCIA", "CARTA DE CONCESSÃO DE BENEFÍCIOS ANTERIOR", "PROCESSO ADMINISTRATIVO", "EXTRATO DE CNIS", "OUTROS DOCUMENTOS"]
+    },
+    {
+        "title": "Concessão de aposentadoria",
+        "text": "Ação na qual se busca a concessão (permissão) de aposentadoria computando-se o tempo de trabalho e, pela nova regra da previdência (após novembro de 2019 data da Reforma da previdência), o beneficiário deve possuir os seguintes requisitos: quinze anos de tempo de contribuição, se mulher, e vinte anos de tempo de contribuição, se homem.",
+        "neededDocuments": ["KIT PROCURAÇÃO", "LOGIN E SENHA MEU INSS", "REGISTRO GERAL", "COMPROVANTE DE RESIDÊNCIA", "INDEFERIMENTO ADMINISTRATIVO", "EXTRATO DE CNIS", "CARTEIRA DE TRABALHO PROFISSIONAL", "GUIA DA PREVIDÊNCIA SOCIAL PAGA", "OUTROS DOCUMENTOS"]
+    },
+    {
+        "title": "Revisão da Vida Inteira",
+        "text": "Ação através da qual o segurado aproveita contribuições realizadas antes de julho de 1994 em seu benefício, desde que seja mais vantajoso.",
+        "neededDocuments": ["KIT PROCURAÇÃO", "LOGIN E SENHA MEU INSS", "REGISTRO GERAL", "COMPROVANTE DE RESIDÊNCIA", "CARTA DE CONCESSÃO DE BENEFÍCIOS ANTERIOR", "PROCESSO ADMINISTRATIVO", "EXTRATO DE CNIS", "OUTROS DOCUMENTOS"]
+    }    
+]}

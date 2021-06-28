@@ -1,0 +1,177 @@
+[{
+  "_id": {
+    "$oid": "5f616460e98fca0006955faf"
+  },
+  "imagepath": null,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:28.815Z"
+  },
+  "title": "Adicional de 25% na aposentadoria",
+  "text": "Ação na qual busca o segurado acrescer ao seu benefício 25%, tendo em vista a necessidade de um cuidador, ou seja, de auxílio diário para suas atividades.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fb4"
+  },
+  "imagepath": null,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:28.815Z"
+  },
+  "title": "Pensão por morte",
+  "text": "Ação na qual busca o dependente do segurado o benefício de pensão por morte, face o falecimento do segurado.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fb5"
+  },
+  "imagepath": null,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:28.815Z"
+  },
+  "title": "Aposentadoria por idade",
+  "text": "Ação na qual se busca a concessão (permissão) de aposentadoria por idade desde que atingido o tempo mínimo de 15 anos de contribuição até novembro de 2019.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fb6"
+  },
+  "imagepath": null,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:28.815Z"
+  },
+  "title": "Concessão/Restabelecimento de auxílio-doença e/ou aposentadoria por invalidez",
+  "text": "Ação na qual se busca a concessão/restabelecimento do benefício de auxílio-doença e/ou sua conversão em aposentadoria por invalidez desde que preenchidos os requisitos para isto.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fb7"
+  },
+  "imagepath": null,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:28.815Z"
+  },
+  "title": "Correção do valor recebido por Precatório/Revisão",
+  "text": "Ação na qual se busca a revisão do valor recebido através de indenizações pagas pelo INSS, União ou de qualquer entidade da Administraçaõ Pública.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fb8"
+  },
+  "imagepath": null,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:28.815Z"
+  },
+  "title": "Salário-maternidade",
+  "text": "Ação na qual busca a segurada a concessão do salário-maternidade, tendo em vista, via de regra, o nascimento de seu filho(a).",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fb9"
+  },
+  "imagepath": null,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:28.815Z"
+  },
+  "title": "Auxílio-reclusão",
+  "text": "Ação na qual busca o dependente do segurado preso o benefício de auxílio-reclusão.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fba"
+  },
+  "imagepath": null,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:28.815Z"
+  },
+  "title": "Revisão de Benefício",
+  "text": "Ação na qual busca revisar o benefício do segurado, por erro no ato concessório, por erro de cálculo do INSS e ainda pela possibilidade de averbar (anotar, declarar) período não computado pelo INSS ou período laborado em atividade especial reconhecido pelo INSS apenas como tempo comum, desde que comprovada a exposição a agentes nocivos. Ainda, para aqueles que trabalham em atividade rural, se não reconhecida pelo INSS na via administrativa, é possível a averbação (declaração) deste período judicialmente.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fbb"
+  },
+  "imagepath": null,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:28.815Z"
+  },
+  "title": "Revisão salário-maternidade",
+  "text": "Ação na qual se busca a revisão do salário maternidade recebido, visto que deve o mesmo ser pago no valor integral ao da última remuneração antes do parto. Ainda é devida a revisão para as seguradas empregadas e trabalhadoras avulsas.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fbc"
+  },
+  "imagepath": null,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:28.815Z"
+  },
+  "title": "Revisão do super teto",
+  "text": "Ação na qual se busca a revisão do benefício e sua readequação pela EC n° 20/98 e n° 41/03, diante de sua limitação pelo teto da época.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fbd"
+  },
+  "imagepath": null,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:28.815Z"
+  },
+  "title": "Concessão de aposentadoria",
+  "text": "Ação na qual se busca a concessão (permissão) de aposentadoria computando-se o tempo de trabalho e, pela nova regra da previdência (após novembro de 2019 data da Reforma da previdência), o beneficiário deve possuir os seguintes requisitos: quinze anos de tempo de contribuição, se mulher, e vinte anos de tempo de contribuição, se homem.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fbe"
+  },
+  "imagepath": null,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:28.815Z"
+  },
+  "title": "Revisão da Vida Inteira",
+  "text": "Ação através da qual o segurado aproveita contribuições realizadas antes de julho de 1994 em seu benefício, desde que seja mais vantajoso.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fb0"
+  },
+  "imagepath": null,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:28.815Z"
+  },
+  "title": "Benefício assistencial – LOAS (deficiente ou idoso)",
+  "text": "Ação na qual se busca a concessão do benefício assistencial (benefício pago pelo INSS no valor de 01 (um) salário mínimo para aquele que preencha os requisitos existentes na lei).",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fb1"
+  },
+  "imagepath": null,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:28.815Z"
+  },
+  "title": "Aposentadoria por tempo de contribuição",
+  "text": "Ação na qual se busca a concessão (permissão) de aposentadoria computando-se o tempo de trabalho, tanto o tempo comum como aquele período em que laborou em atividade especial (exposto a agentes nocivos).",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fb2"
+  },
+  "imagepath": null,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:28.815Z"
+  },
+  "title": "Auxílio-acidente",
+  "text": "Ação na qual se busca o segurado a concessão de auxílio-acidente, tendo em vista a redução de sua capacidade laborativa após o acidente sofrido.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5f616460e98fca0006955fb3"
+  },
+  "imagepath": null,
+  "createdAt": {
+    "$date": "2020-09-16T01:03:28.815Z"
+  },
+  "title": "Concessão de aposentadoria especial",
+  "text": "Ação na qual se busca a concessão (permissão) de aposentadoria computando-se o tempo de trabalho de 25 anos diante da periculosidade ou insalubridade (situações degradantes e nocivas) e pela nova regra da previdência (após novembro de 2019 data da Reforma da previdência) ter os respectivos 25 anos ininterruptos de atividade considerada especial.",
+  "__v": 0
+}]

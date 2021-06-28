@@ -1,0 +1,48 @@
+{
+  "title": "IuguPlan",
+  "required": [
+    "iugu_id",
+    "name",
+    "identifier"
+  ],
+  "properties": {
+    "iugu_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "identifier": {
+      "type": "object",
+      "properties": {}
+    },
+    "interval": {
+      "type": "number",
+      "required": false
+    },
+    "interval_type": {
+      "type": "number",
+      "required": false
+    },
+    "prices": {
+      "type": "array",
+      "required": false,
+      "items": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    },
+    "_id": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

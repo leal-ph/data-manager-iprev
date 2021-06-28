@@ -1,0 +1,8 @@
+{
+  "host":"smtp.mailtrap.io",
+  "port":"2525",
+  "user":"5ef244bc583a9c",
+  "pass":"29317c8092f329",
+  "verification_endpoint":"http://localhost:5000/users/verifyuser",
+  "renewpassword_endpoint":"http://app.bocayuvaadvogados.com.br/api/renewpass"
+}

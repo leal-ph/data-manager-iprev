@@ -1,0 +1,2964 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "PORTAL-BCA",
+    "description": "",
+    "contact": {}
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/admins/createadmin": {
+      "post": {
+        "description": "Cria um usuário administrador",
+        "summary": "CREATE ADMIN",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "CREATEADMIN",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CREATEADMINRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/login/adminlogin": {
+      "post": {
+        "description": "",
+        "summary": "LOGIN ADMIN",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "LOGINADMIN",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/LOGINADMINRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/admins/deleteadmin/": {
+      "delete": {
+        "description": "",
+        "summary": "DELETE ADMIN",
+        "tags": [
+          "ADMIN"
+        ],
+        "operationId": "DELETEADMIN",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/profiles/createprofile": {
+      "post": {
+        "description": "",
+        "summary": "CREATE PROFILE",
+        "tags": [
+          "PROFILES"
+        ],
+        "operationId": "CREATEPROFILE",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CREATEPROFILERequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/profiles/getprofilebyfilter": {
+      "post": {
+        "description": "",
+        "summary": "GET PROFILES FILTER",
+        "tags": [
+          "PROFILES"
+        ],
+        "operationId": "GETPROFILESFILTER",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/GETPROFILESFILTERRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/profiles/updateprofile/:profileid": {
+      "put": {
+        "description": "",
+        "summary": "UPDATE PROFILE",
+        "tags": [
+          "PROFILES"
+        ],
+        "operationId": "UPDATEPROFILE",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UPDATEPROFILERequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/profiles/deleteprofile/": {
+      "delete": {
+        "description": "",
+        "summary": "DELETE PROFILE",
+        "tags": [
+          "PROFILES"
+        ],
+        "operationId": "DELETEPROFILE",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/meetings/createmeeting": {
+      "post": {
+        "description": "",
+        "summary": "CREATE MEETING",
+        "tags": [
+          "MEETINGS"
+        ],
+        "operationId": "CREATEMEETING",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CREATEMEETINGRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/meetings/getmeetingbyfilter": {
+      "post": {
+        "description": "",
+        "summary": "GET MEETINGS FILTER",
+        "tags": [
+          "MEETINGS"
+        ],
+        "operationId": "GETMEETINGSFILTER",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/GETMEETINGSFILTERRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/meetings/findlawyermeetings": {
+      "post": {
+        "description": "",
+        "summary": "GET LAWYER MEETINGS",
+        "tags": [
+          "MEETINGS"
+        ],
+        "operationId": "GETLAWYERMEETINGS",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/GETLAWYERMEETINGSRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/meetings/findusermeetings": {
+      "post": {
+        "description": "",
+        "summary": "GET USER MEETINGS",
+        "tags": [
+          "MEETINGS"
+        ],
+        "operationId": "GETUSERMEETINGS",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/GETUSERMEETINGSRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/meetings/updatemeeting/:meetingid": {
+      "put": {
+        "description": "",
+        "summary": "UPDATE MEETING",
+        "tags": [
+          "MEETINGS"
+        ],
+        "operationId": "UPDATEMEETING",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UPDATEMEETINGRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/meetings/deletemeeting/": {
+      "delete": {
+        "description": "",
+        "summary": "DELETE MEETING",
+        "tags": [
+          "MEETINGS"
+        ],
+        "operationId": "DELETEMEETING",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/payments/createpayment": {
+      "post": {
+        "description": "",
+        "summary": "CREATE PAYMENT",
+        "tags": [
+          "PAYMENTS"
+        ],
+        "operationId": "CREATEPAYMENT",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CREATEPAYMENTRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/payments/getpaymentbyfilter": {
+      "post": {
+        "description": "",
+        "summary": "GET PAYMENTS FILTER",
+        "tags": [
+          "PAYMENTS"
+        ],
+        "operationId": "GETPAYMENTSFILTER",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/GETPAYMENTSFILTERRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/payments/updatepayment/:paymentid": {
+      "put": {
+        "description": "",
+        "summary": "UPDATE PAYMENT",
+        "tags": [
+          "PAYMENTS"
+        ],
+        "operationId": "UPDATEPAYMENT",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UPDATEPAYMENTRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/payments/deletepayment/": {
+      "delete": {
+        "description": "",
+        "summary": "DELETE PAYMENT",
+        "tags": [
+          "PAYMENTS"
+        ],
+        "operationId": "DELETEPAYMENT",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/forms/createform": {
+      "post": {
+        "description": "",
+        "summary": "CREATE FORM",
+        "tags": [
+          "FORMS"
+        ],
+        "operationId": "CREATEFORM",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CREATEFORMRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/forms/getformbyfilter": {
+      "post": {
+        "description": "",
+        "summary": "GET FORM INFO FILTER",
+        "tags": [
+          "FORMS"
+        ],
+        "operationId": "GETFORMINFOFILTER",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/GETFORMINFOFILTERRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/forms/updateform/:formid": {
+      "put": {
+        "description": "",
+        "summary": "UPDATE FORM",
+        "tags": [
+          "FORMS"
+        ],
+        "operationId": "UPDATEFORM",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UPDATEFORMRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/forms/deleteform/": {
+      "delete": {
+        "description": "",
+        "summary": "DELETE FORM",
+        "tags": [
+          "FORMS"
+        ],
+        "operationId": "DELETEFORM",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/docs/createdoc": {
+      "post": {
+        "description": "",
+        "summary": "CREATE DOC",
+        "tags": [
+          "DOCUMENTS"
+        ],
+        "operationId": "CREATEDOC",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CREATEDOCRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/docs/getdocbyfilter": {
+      "post": {
+        "description": "",
+        "summary": "GET DOC INFO FILTER",
+        "tags": [
+          "DOCUMENTS"
+        ],
+        "operationId": "GETDOCINFOFILTER",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/GETDOCINFOFILTERRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/docs/updatedoc/:docid": {
+      "put": {
+        "description": "",
+        "summary": "UPDATE DOC",
+        "tags": [
+          "DOCUMENTS"
+        ],
+        "operationId": "UPDATEDOC",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UPDATEDOCRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/docs/deletedoc": {
+      "delete": {
+        "description": "",
+        "summary": "DELETE DOC",
+        "tags": [
+          "DOCUMENTS"
+        ],
+        "operationId": "DELETEDOC",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/texts/createtext": {
+      "post": {
+        "description": "",
+        "summary": "CREATE TEXT",
+        "tags": [
+          "TEXTS"
+        ],
+        "operationId": "CREATETEXT",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CREATETEXTRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/texts/gettextbyfilter": {
+      "post": {
+        "description": "",
+        "summary": "GET TEXT INFO FILTER",
+        "tags": [
+          "TEXTS"
+        ],
+        "operationId": "GETTEXTINFOFILTER",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/GETTEXTINFOFILTERRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/texts/updatetext/:textid": {
+      "put": {
+        "description": "",
+        "summary": "UPDATE TEXT",
+        "tags": [
+          "TEXTS"
+        ],
+        "operationId": "UPDATETEXT",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UPDATETEXTRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/texts/deletetext": {
+      "delete": {
+        "description": "",
+        "summary": "DELETE TEXT",
+        "tags": [
+          "TEXTS"
+        ],
+        "operationId": "DELETETEXT",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/questions/createquestion": {
+      "post": {
+        "description": "",
+        "summary": "CREATE QUESTION",
+        "tags": [
+          "QUESTIONS"
+        ],
+        "operationId": "CREATEQUESTION",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CREATEQUESTIONRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/questions/getquestionbyfilter": {
+      "post": {
+        "description": "",
+        "summary": "GET QUESTION INFO FILTER",
+        "tags": [
+          "QUESTIONS"
+        ],
+        "operationId": "GETQUESTIONINFOFILTER",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/GETQUESTIONINFOFILTERRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/questions/updatequestion/:questionid": {
+      "put": {
+        "description": "",
+        "summary": "UPDATE QUESTION",
+        "tags": [
+          "QUESTIONS"
+        ],
+        "operationId": "UPDATEQUESTION",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UPDATEQUESTIONRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/questions/deletequestion/": {
+      "delete": {
+        "description": "",
+        "summary": "DELETE QUESTION",
+        "tags": [
+          "QUESTIONS"
+        ],
+        "operationId": "DELETEQUESTION",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/lawyers/createlawyer": {
+      "post": {
+        "description": "",
+        "summary": "CREATE LAWYER",
+        "tags": [
+          "LAWYERS"
+        ],
+        "operationId": "CREATELAWYER",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CREATELAWYERRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/updatelawyer/:lawyerid": {
+      "put": {
+        "description": "",
+        "summary": "UPDATE LAWYER INFO",
+        "tags": [
+          "LAWYERS"
+        ],
+        "operationId": "UPDATELAWYERINFO",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UPDATELAWYERINFORequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/lawyers/getlawyerbyfilter": {
+      "post": {
+        "description": "",
+        "summary": "GET LAWYER INFO FILTER",
+        "tags": [
+          "LAWYERS"
+        ],
+        "operationId": "GETLAWYERINFOFILTER",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/GETLAWYERINFOFILTERRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/lawyerlogin": {
+      "post": {
+        "description": "",
+        "summary": "LOGIN LAWYER",
+        "tags": [
+          "LAWYERS"
+        ],
+        "operationId": "LOGINLAWYER",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/LOGINLAWYERRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/logout/lawyerlogout": {
+      "post": {
+        "description": "",
+        "summary": "LOGOUT LAWYER",
+        "tags": [
+          "LAWYERS"
+        ],
+        "operationId": "LOGOUTLAWYER",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/LOGOUTLAWYERRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/lawyers/deletelawyer": {
+      "delete": {
+        "description": "",
+        "summary": "DELETE LAWYER",
+        "tags": [
+          "LAWYERS"
+        ],
+        "operationId": "DELETELAWYER",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/users/createuser": {
+      "post": {
+        "description": "",
+        "summary": "CREATE USER",
+        "tags": [
+          "USERS"
+        ],
+        "operationId": "CREATEUSER",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CREATEUSERRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/login/userlogin": {
+      "post": {
+        "description": "",
+        "summary": "LOGIN USER",
+        "tags": [
+          "USERS"
+        ],
+        "operationId": "LOGINUSER",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/LOGINUSERRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/logout/userlogout": {
+      "post": {
+        "description": "",
+        "summary": "LOGOUT USER",
+        "tags": [
+          "USERS"
+        ],
+        "operationId": "LOGOUTUSER",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/LOGOUTUSERRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/users/getuserbyfilter": {
+      "post": {
+        "description": "",
+        "summary": "GET USER INFO FILTER",
+        "tags": [
+          "USERS"
+        ],
+        "operationId": "GETUSERINFOFILTER",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/GETUSERINFOFILTERRequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/users/updateuser/:userid": {
+      "put": {
+        "description": "",
+        "summary": "UPDATE USER INFO",
+        "tags": [
+          "USERS"
+        ],
+        "operationId": "UPDATEUSERINFO",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/UPDATEUSERINFORequest"
+            }
+          },
+          {
+            "name": "Content-Type", "default":"application/json",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    },
+    "/users/deleteuser/": {
+      "delete": {
+        "description": "",
+        "summary": "DELETE USER",
+        "tags": [
+          "USERS"
+        ],
+        "operationId": "DELETEUSER",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "type": "object"
+            },
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CREATEADMINRequest": {
+      "title": "CREATEADMINRequest",
+      "example": {
+        "name": "admin",
+        "email": "admin@admin",
+        "password": "bca2020"
+      },
+      "type": "object",
+      "required": [
+        "name",
+        "email",
+        "password"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "last_token": {
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "LOGINADMINRequest": {
+      "title": "LOGINADMINRequest",
+      "example": {
+        "email": "admin1@admin1",
+        "password": "examplepwd"
+      },
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "email",
+        "password"
+      ]
+    },
+    "CREATEPROFILERequest": {
+      "title": "CREATEPROFILERequest",
+      "example": {
+        "title": "Revisões",
+        "text": "-"
+      },
+      "type": "object",
+      "required": [
+        "title",
+        "text"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "imagepath": {
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "GETPROFILESFILTERRequest": {
+      "title": "GETPROFILESFILTERRequest",
+      "example": {
+        "filter": {
+          "title": "Revisões"
+        }
+      },
+      "type": "object",
+      "properties": {
+        "filter": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "filter"
+      ]
+    },
+    "UPDATEPROFILERequest": {
+      "title": "UPDATEPROFILERequest",
+      "example": {
+        "title": "Revisões"
+      },
+      "type": "object"
+    },
+    "CREATEMEETINGRequest": {
+      "title": "CREATEMEETINGRequest",
+      "example": {
+        "lawyer": "5f17b538dbfcf95a80728e61",
+        "client": "5f17aece10cf0c1ba8effe07",
+        "date": "2020-07-10T21:00:00.000Z"
+      },
+      "required": [
+        "lawyer",
+        "client",
+        "date"
+      ],
+      "properties": {
+        "lawyer": {
+          "type": "string"
+        },
+        "client": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "date_ts": {
+          "type": "number",
+          "required": false
+        },
+        "link": {
+          "type": "string",
+          "required": false
+        },
+        "id_teams": {
+          "type": "string",
+          "required": false
+        },
+        "informations": {
+          "type": "object",
+          "required": false,
+          "properties": {}
+        }
+      }
+    },
+    "GETMEETINGSFILTERRequest": {
+      "title": "GETMEETINGSFILTERRequest",
+      "example": {
+        "filter": {
+          "lawyer": "5f17b538dbfcf95a80728e61"
+        }
+      },
+      "type": "object",
+      "properties": {
+        "filter": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "filter"
+      ]
+    },
+    "GETLAWYERMEETINGSRequest": {
+      "title": "GETLAWYERMEETINGSRequest",
+      "example": {
+        "lawyer": "5f17b538dbfcf95a80728e61",
+        "startts": 1596321000,
+        "finalts": 1597942800,
+        "info": false
+      },
+      "type": "object",
+      "properties": {
+        "lawyer": {
+          "type": "string"
+        },
+        "startts": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "finalts": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "info": {
+          "type": "boolean",
+          "default":false
+        }
+      },
+      "required": [
+        "lawyer",
+        "startts",
+        "finalts"
+      ]
+    },
+    "GETUSERMEETINGSRequest": {
+      "title": "GETUSERMEETINGSRequest",
+      "example": {
+        "client": "5f222c42fa44594a741fdca0",
+        "startts": 1596320000,
+        "finalts": 1597942800,
+        "info": true
+      },
+      "type": "object",
+      "properties": {
+        "client": {
+          "type": "string"
+        },
+        "startts": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "finalts": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "info": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "required": [
+        "client",
+        "startts",
+        "finalts"
+      ]
+    },
+    "UPDATEMEETINGRequest": {
+      "title": "UPDATEMEETINGRequest",
+      "example": {
+        "date": "2020-07-10T21:00:00.000Z"
+      },
+      "type": "object"
+    },
+    "CREATEPAYMENTRequest": {
+      "title": "CREATEPAYMENTRequest",
+      "example": {
+        "client": "5f222c42fa44594a741fdca0",
+        "type": "credit-card"
+      },
+      "type": "object",
+      "required": [
+        "client",
+        "type"
+      ],
+      "properties": {
+        "client": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string",
+          "required": false
+        },
+        "doc_errors": {
+          "type": "object",
+          "required": false,
+          "properties": {}
+        },
+        "success": {
+          "type": "boolean",
+          "required": false
+        },
+        "url": {
+          "type": "string",
+          "required": false
+        },
+        "pdf": {
+          "type": "string",
+          "required": false
+        },
+        "identification": {
+          "type": "string",
+          "required": false
+        },
+        "invoice_id": {
+          "type": "string",
+          "required": false
+        },
+        "LR": {
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "GETPAYMENTSFILTERRequest": {
+      "title": "GETPAYMENTSFILTERRequest",
+      "example": {
+        "filter": {
+          "client": "5f17b538dbfcf95a80728e61"
+        }
+      },
+      "type": "object",
+      "properties": {
+        "filter": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "filter"
+      ]
+    },
+    "UPDATEPAYMENTRequest": {
+      "title": "UPDATEPAYMENTRequest",
+      "example": {
+        "type": "credit-card"
+      },
+      "type": "object"
+    },
+    "CREATEFORMRequest": {
+      "title": "CREATEFORMRequest",
+      "example": {
+        "type": "vida-contributiva-2",
+        "questions": [
+          "5f149da0b2c3333a34e5402d",
+          "5f149d82b2c3333a34e5402c",
+          "5f149d1fb2c3333a34e5402b",
+          "5f1499f8b5be493cb440a234",
+          "5f149a5eb5be493cb440a235",
+          "5f149a7ab5be493cb440a236",
+          "5f149af0b5be493cb440a237",
+          "5f149b67b5be493cb440a238"
+        ]
+      },
+      "type": "object",
+      "required": [
+        "type",
+        "questions"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "required": true
+          }
+        }
+      }
+    },
+    "GETFORMINFOFILTERRequest": {
+      "title": "GETFORMINFOFILTERRequest",
+      "example": {
+        "filter": {
+          "type": "vida-contributiva"
+        }
+      },
+      "type": "object",
+      "properties": {
+        "filter": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "filter"
+      ]
+    },
+    "UPDATEFORMRequest": {
+      "title": "UPDATEFORMRequest",
+      "example": {
+        "questions": [
+          "5f149da0b2c3333a34e5402d",
+          "5f149d82b2c3333a34e5402c",
+          "5f149d1fb2c3333a34e5402b",
+          "5f1499f8b5be493cb440a234",
+          "5f149a5eb5be493cb440a235",
+          "5f149a7ab5be493cb440a236",
+          "5f149af0b5be493cb440a237",
+          "5f149b67b5be493cb440a238"
+        ]
+      },
+      "type": "object"
+    },
+    "CREATEDOCRequest": {
+      "title": "CREATEDOCRequest",
+      "example": {
+        "type": "vida-contributiva",
+        "path": "/local/mydoc.png"
+      },
+      "type": "object",
+      "required": [
+        "type",
+        "path"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string"
+        },
+        "signed": {
+          "type": "boolean",
+          "required": false
+        },
+        "signed_ts": {
+          "type": "number",
+          "required": false
+        }
+      }
+    },
+    "GETDOCINFOFILTERRequest": {
+      "title": "GETDOCINFOFILTERRequest",
+      "example": {
+        "filter": {
+          "type": "rg"
+        }
+      },
+      "type": "object",
+      "properties": {
+        "filter": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "filter"
+      ]
+    },
+    "UPDATEDOCRequest": {
+      "title": "UPDATEDOCRequest",
+      "example": {
+        "type": "cpf"
+      },
+      "type": "object"
+    },
+    "CREATETEXTRequest": {
+      "title": "CREATETEXTRequest",
+      "example": {
+        "type": "documento-para-assinatura",
+        "text": "ESSE É UM TEXTO DE UM DOCUMENTO"
+      },
+      "type": "object",
+      "required": [
+        "type",
+        "text"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        }
+      }
+    },
+    "GETTEXTINFOFILTERRequest": {
+      "title": "GETTEXTINFOFILTERRequest",
+      "example": {
+        "filter": {
+          "type": "documento-para-assinatura"
+        }
+      },
+      "type": "object",
+      "properties": {
+        "filter": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "filter"
+      ]
+    },
+    "UPDATETEXTRequest": {
+      "title": "UPDATETEXTRequest",
+      "example": {
+        "type": "documento-termos"
+      },
+      "type": "object"
+    },
+    "CREATEQUESTIONRequest": {
+      "title": "CREATEQUESTIONRequest",
+      "example": {
+        "question": "Fale, se quiser, um pouco mais sobre seu caso:",
+        "options": [
+          "AAAAA",
+          "BBBBB",
+          "CCCCC"
+        ]
+      },
+      "type": "object",
+      "required": [
+        "questionID",
+        "question",
+        "options"
+      ],
+      "properties": {
+        "questionID": {
+          "type": "number"
+        },
+        "question": {
+          "type": "string"
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          }
+        }
+      }
+    },
+    "GETQUESTIONINFOFILTERRequest": {
+      "title": "GETQUESTIONINFOFILTERRequest",
+      "example": {
+        "filter": {}
+      },
+      "type": "object",
+      "properties": {
+        "filter": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "filter"
+      ]
+    },
+    "UPDATEQUESTIONRequest": {
+      "title": "UPDATEQUESTIONRequest",
+      "example": {
+        "questionID": 9
+      },
+      "type": "object"
+    },
+    "CREATELAWYERRequest": {
+      "title": "CREATELAWYERRequest",
+      "example": {
+        "name": "Dr. Marcola",
+        "lastname": "Brahmeiro",
+        "expertise": "Criminal",
+        "email": "marcola@bca.com.br",
+        "clients": [
+          "5f17ad56d63fc30a98f8c35b",
+          "5f17aef810cf0c1ba8effe09"
+        ],
+        "oab_register": "0185789-DF",
+        "password": "111222333"
+      },
+      "type": "object",
+      "required": [
+        "name",
+        "lastname",
+        "email",
+        "password"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "lastname": {
+          "type": "string"
+        },
+        "expertise": {
+          "type": "string",
+          "required": false
+        },
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "last_token": {
+          "type": "string",
+          "required": false
+        },
+        "clients": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "required": false
+          }
+        },
+        "teamsuserID": {
+          "type": "string",
+          "required": false
+        },
+        "teamscalendarID": {
+          "type": "string",
+          "required": false
+        },
+        "oab_register": {
+          "type": "string",
+          "required": false
+        }
+      }
+    },
+    "UPDATELAWYERINFORequest": {
+      "title": "UPDATELAWYERINFORequest",
+      "example": {
+        "name": "João Marcelino",
+        "password": "123abcdefghij",
+        "cpf": "03203103067",
+        "email_confirmed": false
+      },
+      "type": "object"
+    },
+    "GETLAWYERINFOFILTERRequest": {
+      "title": "GETLAWYERINFOFILTERRequest",
+      "example": {
+        "filter": {
+          "email": "marcola@bca.com.br"
+        }
+      },
+      "type": "object",
+      "properties": {
+        "filter": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "filter"
+      ]
+    },
+    "LOGINLAWYERRequest": {
+      "title": "LOGINLAWYERRequest",
+      "example": {
+        "email": "marcola@bca.com.br",
+        "password": "111222333"
+      },
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "email",
+        "password"
+      ]
+    },
+    "LOGOUTLAWYERRequest": {
+      "title": "LOGOUTLAWYERRequest",
+      "example": {
+        "email": "marcola@bca.com.br"
+      },
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "email"
+      ]
+    },
+    "CREATEUSERRequest": {
+      "title": "CREATEUSERRequest",
+      "example": {
+        "name": "Zezinho",
+        "lastname": "Leal",
+        "cpf": "01799989529",
+        "email": "zezinho@abc.com",
+        "password": "a1B2c3!!",
+        "profile": "5f17b95b7c1d2a4e1c9046ce",
+        "rg": "2477481",
+        "email_confirmed": false,
+        "form_answers": [
+          {
+            "question_id": 1,
+            "answer": 2
+          },
+          {
+            "question_id": 2,
+            "answer": 4
+          },
+          {
+            "question_id": 3,
+            "answer": 4
+          },
+          {
+            "question_id": 4,
+            "answer": 2
+          },
+          {
+            "question_id": 5,
+            "answer": 4
+          }
+        ]
+      },
+      "type": "object",
+      "required": [
+        "name",
+        "lastname",
+        "cpf",
+        "rg",
+        "email",
+        "profile",
+        "password"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "lastname": {
+          "type": "string"
+        },
+        "fullname": {
+          "type": "string",
+          "required": false
+        },
+        "cpf": {
+          "type": "string"
+        },
+        "rg": {
+          "type": "string"
+        },
+        "birth_date": {
+          "type": "string",
+          "required": false,
+          "format": "date-time"
+        },
+        "address": {
+          "type": "string",
+          "required": false
+        },
+        "zipcode": {
+          "type": "string",
+          "required": false
+        },
+        "city": {
+          "type": "string",
+          "required": false
+        },
+        "state": {
+          "type": "string",
+          "required": false
+        },
+        "email": {
+          "type": "string"
+        },
+        "profile": {
+          "type": "string"
+        },
+        "form_answers": {
+          "type": "array",
+          "required": false,
+          "items": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          }
+        },
+        "password": {
+          "type": "string"
+        },
+        "email_confirmed": {
+          "type": "boolean"
+        },
+        "documents": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "required": false
+          }
+        },
+        "processes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "required": false
+          }
+        },
+        "last_token": {
+          "type": "string",
+          "required": false
+        },
+        "verification_timestamp": {
+          "type": "number",
+          "required": false
+        },
+        "renewpassword_timestamp": {
+          "type": "number",
+          "required": false
+        },
+        "renewpassword_permission": {
+          "type": "boolean",
+          "required": false
+        }
+      }
+    },
+    "LOGINUSERRequest": {
+      "title": "LOGINUSERRequest",
+      "example": {
+        "email": "lolinha@abc.com",
+        "password": "a1B2c3!!"
+      },
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "email",
+        "password"
+      ]
+    },
+    "LOGOUTUSERRequest": {
+      "title": "LOGOUTUSERRequest",
+      "example": {
+        "email": "lolinha@abc.com"
+      },
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "email"
+      ]
+    },
+    "GETUSERINFOFILTERRequest": {
+      "title": "GETUSERINFOFILTERRequest",
+      "example": {
+        "filter": {
+          "_id": "5f222c42fa44594a741fdca0"
+        }
+      },
+      "type": "object",
+      "properties": {
+        "filter": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "filter"
+      ]
+    },
+    "UPDATEUSERINFORequest": {
+      "title": "UPDATEUSERINFORequest",
+      "example": {
+        "documents": [
+          "5f233dfd0cba92caa0c477ed"
+        ]
+      },
+      "type": "object"
+    }
+  },
+  "tags": [
+    {
+      "name": "ADMIN",
+      "description": ""
+    },
+    {
+      "name": "PROFILES",
+      "description": ""
+    },
+    {
+      "name": "MEETINGS",
+      "description": ""
+    },
+    {
+      "name": "PAYMENTS",
+      "description": ""
+    },
+    {
+      "name": "FORMS",
+      "description": ""
+    },
+    {
+      "name": "DOCUMENTS",
+      "description": ""
+    },
+    {
+      "name": "TEXTS",
+      "description": ""
+    },
+    {
+      "name": "QUESTIONS",
+      "description": ""
+    },
+    {
+      "name": "LAWYERS",
+      "description": ""
+    },
+    {
+      "name": "USERS",
+      "description": ""
+    }
+  ]
+}
