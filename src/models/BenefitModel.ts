@@ -2,7 +2,7 @@
 import Mongoose from "../config/Database"
 import { Benefit } from "@portal-bca/types"
 
-export interface IBenefit extends Mongoose.Document, Benefit {}
+export type IBenefit = Benefit
 
 // Definindo um modelo de Schema
 const BenefitSchema = new Mongoose.Schema<Benefit>(
@@ -14,7 +14,7 @@ const BenefitSchema = new Mongoose.Schema<Benefit>(
   { timestamps: true },
 )
 
-const BenefitModel = Mongoose.model<IBenefit>("Benefit", BenefitSchema)
+const BenefitModel = Mongoose.model<IBenefit & Mongoose.Document>("Benefit", BenefitSchema)
 
 export default BenefitModel
 

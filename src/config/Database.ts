@@ -6,9 +6,9 @@ let constring: string
 const DBNAME = process.env.DBNAME || "portal-iprev"
 
 if (!process.env.DBTYPE) {
-  constring = `mongodb://localhost:27017/${DBNAME}?authSource=admin`
+  constring = `mongodb://mongodb:27017/${DBNAME}?authSource=admin`
 } else if (process.env.DBTYPE && process.env.DBTYPE === "LOCAL") {
-  constring = `mongodb://localhost:27017/${DBNAME}?authSource=admin`
+  constring = `mongodb://mongodb:27017/${DBNAME}?authSource=admin`
 } else if (process.env.DBTYPE && process.env.DBTYPE === "CLOUD") {
   DBHOST = process.env.DBHOST
   constring = `mongodb+srv://${DBHOST}/${DBNAME}?authSource=admin`
