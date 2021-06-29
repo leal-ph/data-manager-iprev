@@ -27,30 +27,21 @@ const defaultUser = {
   name: "ADMIN",
   email: "admin@admin",
   password: Bcrypt.hashSync("bca@2020", 10),
-}
-
-const docsUser = {
-  name: "DOC ADMIN",
-  email: "docadmin@admin",
-  password: Bcrypt.hashSync("bca@2020", 10),
+  cpf: "null-admin"
 }
 
 const meetUser = {
   name: "MEET ADMIN",
   email: "meetadmin@admin",
   password: Bcrypt.hashSync("bca@2020", 10),
+  cpf: "null-meet"
 }
 
 const paymentUser = {
   name: "PAYMENT ADMIN",
   email: "paymentadmin@admin",
   password: Bcrypt.hashSync("bca@2020", 10),
-}
-
-const lawsuitUser = {
-  name: "LAWSUIT ADMIN",
-  email: "lawsuitadmin@admin",
-  password: Bcrypt.hashSync("bca@2020", 10),
+  cpf: "null-payment"
 }
 
 const UserModel = Mongoose.model<User & Mongoose.Document>("User", UserSchema)
@@ -58,14 +49,6 @@ const UserModel = Mongoose.model<User & Mongoose.Document>("User", UserSchema)
 UserModel.create(defaultUser)
   .then(() => {
     Logger.info("General Admin successfully created!")
-  })
-  .catch((error) => {
-    Logger.warn(error)
-  })
-
-UserModel.create(docsUser)
-  .then(() => {
-    Logger.info("Document Admin successfully created!")
   })
   .catch((error) => {
     Logger.warn(error)
@@ -82,14 +65,6 @@ UserModel.create(meetUser)
 UserModel.create(paymentUser)
   .then(() => {
     Logger.info("Payment Admin successfully created!")
-  })
-  .catch((error) => {
-    Logger.warn(error)
-  })
-
-UserModel.create(lawsuitUser)
-  .then(() => {
-    Logger.info("Lawsuit Admin successfully created!")
   })
   .catch((error) => {
     Logger.warn(error)
