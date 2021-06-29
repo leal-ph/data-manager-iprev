@@ -6,7 +6,7 @@ const Logger = Winston.createLogger({
   format: combine(
     timestamp(),
     prettyPrint(),
-    printf((info) => `${info.timestamp} [${info.level}]: ${info.message},`),
+    printf((info) => `${info.timestamp} [${info.level}]: ${info.message}`),
   ),
   transports: [
     new Winston.transports.Console(),

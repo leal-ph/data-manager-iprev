@@ -22,9 +22,6 @@ router.post("/users/getuserbyfilter", AuthForwarder, ClientController.findUserBy
 router.put("/users/updateuser/:id", AuthForwarder, ClientController.update)
 router.get("/users/getUserPayments", AuthForwarder, ClientController.getUserPayments)
 router.get("/users/getUserPendingPayments", AuthForwarder, ClientController.getUserPendingPayments)
-router.get("/users/getUserDocPendings", AuthForwarder, ClientController.getUserDocPendings)
-router.get("/users/getUserDocuments", AuthForwarder, ClientController.getUserDocuments)
-router.get("/users/getUserSignedDocuments", AuthForwarder, ClientController.getUserSignedDocuments)
 router.get("/users/getUserById", AuthForwarder, ClientController.getUserById)
 router.delete("/users/deleteuser/:id", AuthForwarder, ClientController.deleteUserbyID)
 

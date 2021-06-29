@@ -3,12 +3,12 @@ import Mongoose from "mongoose"
 
 let DBHOST: string | undefined
 let constring: string
-const DBNAME = process.env.DBNAME || "portal-bca"
+const DBNAME = process.env.DBNAME || "portal-iprev"
 
 if (!process.env.DBTYPE) {
-  constring = `mongodb://mongodb:27017/${DBNAME}?authSource=admin`
+  constring = `mongodb://localhost:27017/${DBNAME}?authSource=admin`
 } else if (process.env.DBTYPE && process.env.DBTYPE === "LOCAL") {
-  constring = `mongodb://mongodb:27017/${DBNAME}?authSource=admin`
+  constring = `mongodb://localhost:27017/${DBNAME}?authSource=admin`
 } else if (process.env.DBTYPE && process.env.DBTYPE === "CLOUD") {
   DBHOST = process.env.DBHOST
   constring = `mongodb+srv://${DBHOST}/${DBNAME}?authSource=admin`
@@ -19,7 +19,7 @@ if (!process.env.DBTYPE) {
 
 // const DBPORT = process.env.DBPORT || "27017"
 const DBUSER = process.env.DBUSER || "root"
-const DBPASS = process.env.DBPASS || "bca@2020"
+const DBPASS = process.env.DBPASS || "iprev@2020"
 
 // Realiza a conexão entre o módulo mongoose o banco de dados
 Mongoose.connect(constring, {

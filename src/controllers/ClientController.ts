@@ -8,7 +8,7 @@ import authConfig from "../config/auth.json"
 import Bcrypt from "bcryptjs"
 import Cryptr from "cryptr"
 import Logger from "../modules/logger"
-import { Document, Payment } from "@portal-bca/types"
+import { Payment } from "@portal-bca/types"
 import { verifiedtemplate } from "../config/template"
 
 class ClientController {
@@ -301,36 +301,6 @@ class ClientController {
     }
   }
 
-  async getUserDocPendings(req: Express.Request, res: Express.Response) {
-    await ClientModel.findOne({ _id: req.query.id })
-      .then((response) => {
-        if (response) {
-          const userDocs: any[] = []
-
-          const doclist = response.profile.neededDocuments
-
-          response.documents.forEach(async (document) => {
-            if (document.type != "OUTROS DOCUMENTOS") {
-              userDocs.push(document.type)
-            }
-          })
-
-          const pendingDocs = doclist.length - userDocs.length
-
-          userDocs.forEach(async (doctype) => {
-            doclist.push(doctype)
-          })
-
-          return res.status(200).json({ pending_docs: pendingDocs, pending_list: doclist })
-        }
-        return res.status(404).json({ message: "Usuário não encontrado." })
-      })
-      .catch((error) => {
-        console.error(error)
-        return res.status(500).json(error)
-      })
-  }
-
   async getUserPayments(req: Express.Request, res: Express.Response) {
     await ClientModel.find({ _id: req.query.clientId })
       .populate("payments")
@@ -355,36 +325,6 @@ class ClientController {
         })
 
         return res.status(200).json(pendingPayments)
-      })
-      .catch((error) => {
-        return res.status(500).json(error)
-      })
-  }
-
-  async getUserDocuments(req: Express.Request, res: Express.Response) {
-    await ClientModel.find({ _id: req.query.clientId })
-      .then((response) => {
-        const docs: Document[] = []
-        response[0].documents.forEach((document) => {
-          docs.push(document)
-        })
-        return res.status(200).json(docs)
-      })
-      .catch((error) => {
-        return res.status(500).json(error)
-      })
-  }
-
-  async getUserSignedDocuments(req: Express.Request, res: Express.Response) {
-    await ClientModel.find({ _id: req.query.clientId })
-      .then((response) => {
-        const docs: Document[] = []
-        response[0].documents.forEach((document) => {
-          if (document.sign_status == "finished") {
-            docs.push(document)
-          }
-        })
-        return res.status(200).json(docs)
       })
       .catch((error) => {
         return res.status(500).json(error)

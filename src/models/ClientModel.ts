@@ -11,7 +11,6 @@ const ClientSchema = new Mongoose.Schema(
     fullname: { type: String, required: false },
     cpf: { type: String, required: false, unique: true, sparse: true },
     rg: { type: String, required: false, unique: true, sparse: true },
-    camefrom: { type: String, required: false, default: null },
     birthdate: { type: String, required: false, default: null },
     address: { type: String, required: false, default: null },
     zipcode: { type: String, required: false, default: null },
@@ -19,25 +18,13 @@ const ClientSchema = new Mongoose.Schema(
     state: { type: String, required: false, default: null },
     telephone: { type: String, required: false, default: null },
     email: { type: String, required: true, unique: true, lowercase: true, sparse: true },
-    profile: {
-      type: Mongoose.Schema.Types.ObjectId,
-      ref: "Profile",
-      default: null,
-      required: false,
-      autopopulate: true,
-    },
     form_answers: { type: Array, required: false, default: null },
     email_confirmed: { type: Boolean, default: false },
-    documents: [
-      {
-        type: Mongoose.Schema.Types.ObjectId,
-        ref: "Document",
-        required: false,
-        autopopulate: true,
-      },
-    ],
     payments: [
       { type: Mongoose.Schema.Types.ObjectId, ref: "Payment", required: false, autopopulate: true },
+    ],
+    benefits: [
+      { type: Mongoose.Schema.Types.ObjectId, ref: "Benefit", required: false, autopopulate: true },
     ],
     internal_notes: { type: Object, default: {} },
     verification_timestamp: { type: Number, required: false, default: null },

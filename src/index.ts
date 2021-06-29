@@ -19,9 +19,11 @@ import ClientRoutes from "./routes/ClientRoutes"
 import GroupRoutes from "./routes/GroupRoutes"
 import MailRoutes from "./routes/MailRoutes"
 import PagesRoutes from "./routes/PagesRoutes"
+import BenefitRoutes from "./routes/BenefitRoutes"
 
 import Logger from "./modules/logger"
 import bodyParser from "body-parser"
+// import BenefitModel from "./models/BenefitModel"
 
 const server = Express()
 
@@ -44,6 +46,7 @@ server.use("/", UserRoutes)
 server.use("/", GroupRoutes)
 server.use("/", MailRoutes)
 server.use("/", PagesRoutes)
+server.use("/", BenefitRoutes)
 
 const PORT = parseInt(process.env.SERVICEPORT || "5000")
 

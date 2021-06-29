@@ -18,6 +18,7 @@ import ClientRoutes from "./src/routes/ClientRoutes"
 import GroupRoutes from "./src/routes/GroupRoutes"
 import MailRoutes from "./src/routes/MailRoutes"
 import PagesRoutes from "./src/routes/PagesRoutes"
+import BenefitRoutes from "./src/routes/BenefitRoutes"
 
 import bodyParser from "body-parser"
 import Logger from "./src/modules/logger"
@@ -42,6 +43,7 @@ server.use("/", UserRoutes)
 server.use("/", GroupRoutes)
 server.use("/", MailRoutes)
 server.use("/", PagesRoutes)
+server.use("/", BenefitRoutes)
 
 const PORT = parseInt(process.env.SERVICEPORT || "5000")
 
