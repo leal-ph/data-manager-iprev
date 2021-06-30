@@ -275,6 +275,37 @@ class ClientController {
       })
   }
 
+  async updateClientReqBenefits(req: Express.Request, res: Express.Response) {
+    Logger.info(`Updating requested benefits >> ${req.params.id} << on DB...`)
+
+    ClientModel.findByIdAndUpdate(
+      { _id: req.params.id },
+      {
+        $push: {
+          required_benefits: {
+            benefit: req.body.benefitId,
+            date: null,
+            status: "Aguardando Marcação",
+          },
+        },
+      },
+      {
+        new: true,
+        useFindAndModify: false,
+      },
+    )
+      .then((response) => {
+        Logger.info(`Client >> ${req.params.id} << required benefit successfully updated on DB...`)
+        return res.status(200).json(response)
+      })
+      .catch((error) => {
+        Logger.error(
+          `Error while updating required benefit ${req.body.benefitId} on DB >> ${error}...`,
+        )
+        return res.status(500).json(error)
+      })
+  }
+
   async checkCPFExists(req: Express.Request, res: Express.Response) {
     try {
       const response = await ClientModel.findOne({ cpf: req.body.cpf })
