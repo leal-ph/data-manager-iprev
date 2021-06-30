@@ -23,8 +23,20 @@ const ClientSchema = new Mongoose.Schema(
     payments: [
       { type: Mongoose.Schema.Types.ObjectId, ref: "Payment", required: false, autopopulate: true },
     ],
-    benefits: [
-      { type: Mongoose.Schema.Types.ObjectId, ref: "Benefit", required: false, autopopulate: true },
+    required_benefits: [
+      {
+        benefit: {
+          type: Mongoose.Schema.Types.ObjectId,
+          ref: "Benefit",
+          autopopulate: true,
+        },
+        date: {
+          type: Date,
+        },
+        status: {
+          type: String,
+        },
+      },
     ],
     internal_notes: { type: Object, default: {} },
     verification_timestamp: { type: Number, required: false, default: null },
