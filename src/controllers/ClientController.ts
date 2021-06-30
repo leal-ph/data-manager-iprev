@@ -278,13 +278,15 @@ class ClientController {
   async updateClientReqBenefits(req: Express.Request, res: Express.Response) {
     Logger.info(`Updating requested benefits >> ${req.params.id} << on DB...`)
 
+    const now = new Date()
+
     ClientModel.findByIdAndUpdate(
       { _id: req.params.id },
       {
         $push: {
           required_benefits: {
             benefit: req.body.benefitId,
-            date: null,
+            date: now,
             status: "Aguardando Marcação",
           },
         },
@@ -304,6 +306,33 @@ class ClientController {
         )
         return res.status(500).json(error)
       })
+  }
+
+  async deleteRequestedBenefit(req: Express.Request, res: Express.Response) {
+    try {
+      ClientModel.updateOne(
+        { _id: req.params.id },
+        {
+          $pull: { required_benefits: { benefit: req.body.benefitId } },
+        },
+        { multi: true },
+      )
+        .then((response) => {
+          Logger.info(
+            `Client >> ${req.params.id} << required benefit successfully removed from DB...`,
+          )
+          return res.status(200).json(response)
+        })
+        .catch((error) => {
+          Logger.error(
+            `Error while removing required benefit ${req.body.benefitId} on DB >> ${error}...`,
+          )
+          return res.status(500).json(error)
+        })
+    } catch (error) {
+      Logger.error(`Error while updating requested benefits for client on DB >> ${error}...`)
+      return res.status(500).json(error)
+    }
   }
 
   async checkCPFExists(req: Express.Request, res: Express.Response) {
