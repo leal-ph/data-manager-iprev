@@ -14,6 +14,7 @@ router.post("/users/updateadditional/:id", ClientController.updateAdditionalInfo
 router.post("/users/updateprofile/:id", ClientController.updateProfile)
 router.post("/users/:id/updateUserReqBenefits", ClientController.updateClientReqBenefits)
 router.post("/users/:id/deleteUserReqBenefits", ClientController.deleteRequestedBenefit)
+router.post("/users/:id/updateUserReqStatus", ClientController.updateReqBenefitStatus)
 router.post("/users/sendrenewrequest", MailerController.sendPassRenewCode)
 router.post("/users/checkRG", ClientController.checkRGExists)
 router.post("/users/checkCPF", ClientController.checkCPFExists)

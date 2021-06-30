@@ -308,6 +308,50 @@ class ClientController {
       })
   }
 
+  async updateReqBenefitStatus(req: Express.Request, res: Express.Response) {
+    Logger.info(`Updating requested benefits >> ${req.params.id} << on DB...`)
+
+    const now = new Date()
+    let setObject
+
+    const client = await ClientModel.findOne({ _id: req.params.id })
+
+    if (client) {
+      if (req.body.newStatus && req.body.date) {
+        setObject = {
+          "required_benefits.$.status": req.body.newStatus,
+          "required_benefits.$.date": req.body.date,
+        }
+      } else {
+        setObject = {
+          "required_benefits.$.status": req.body.newStatus,
+        }
+      }
+
+      client
+        ?.update(
+          { "required_benefits.benefit": req.body.benefitId },
+          {
+            $set: setObject,
+          },
+        )
+        .then((response) => {
+          Logger.info(
+            `Client >> ${req.params.id} << required benefit successfully updated on DB...`,
+          )
+          return res.status(200).json(response)
+        })
+        .catch((error) => {
+          Logger.error(
+            `Error while updating required benefit ${req.body.benefitId} on DB >> ${error}...`,
+          )
+          return res.status(500).json(error)
+        })
+    } else {
+      return res.status(500).json({ error: "ClientId not found" })
+    }
+  }
+
   async deleteRequestedBenefit(req: Express.Request, res: Express.Response) {
     try {
       ClientModel.updateOne(
